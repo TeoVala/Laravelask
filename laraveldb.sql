@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Εξυπηρετητής: localhost:3306
--- Χρόνος δημιουργίας: 24 Ιουν 2023 στις 20:21:57
+-- Χρόνος δημιουργίας: 26 Ιουν 2023 στις 22:34:42
 -- Έκδοση διακομιστή: 5.7.33
 -- Έκδοση PHP: 7.4.19
 
@@ -106,6 +106,13 @@ CREATE TABLE `testcompanies` (
   `phone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Άδειασμα δεδομένων του πίνακα `testcompanies`
+--
+
+INSERT INTO `testcompanies` (`id`, `created_at`, `updated_at`, `name`, `address`, `phone`) VALUES
+(1, NULL, NULL, 'LIONCODE', 'BALKAN', '2311111251 ');
+
 -- --------------------------------------------------------
 
 --
@@ -201,7 +208,7 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT για πίνακα `testcompanies`
 --
 ALTER TABLE `testcompanies`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT για πίνακα `users`
